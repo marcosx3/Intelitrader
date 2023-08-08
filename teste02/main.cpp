@@ -58,7 +58,7 @@ void writeTextEncodeFile()
 {
     std::fstream arq;
     std::string t = readTextFile();
-    arq.open("decode.txt", std::ios::out);
+    arq.open("encode.txt", std::ios::out);
     if (arq.is_open())
     {
         arq << encodeTextFile(t);
